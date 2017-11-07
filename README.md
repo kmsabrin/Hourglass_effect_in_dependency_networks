@@ -22,7 +22,7 @@ java HourglassAnalysis edge_list source_list target_list 0.9
 
 #### 2. Input Format
 
-* edge_list: one edge per line in the following way, from-node <spaces> to-node
+* edge_list: one edge per line in the following way, _from-node &lt;spaces&gt; to-node_
 * source_list: one source node identifier per line
 * target_list: one target node identifier per line
 * coverage threshold: a number between 0 to 1
@@ -37,6 +37,7 @@ It also prints out the total number of paths in the network, one sample core, co
 Sample edge list, source list and target list is provided for the following network:
 
 ![alt text](sample_in.png)
+
 
 The output from the above run is following:
 
