@@ -4,7 +4,7 @@
 >  **Keywords**:  _Modularity_, _Hierarchy_, _Centrality_, _Hourglass Networks_, _Dependency Networks_
 
 
-* Last update: 1, Nov, 2017 
+* Last update: 1 Nov, 2017 
 * Corresponding Paper: [The Hourglass Effect in Hierarchical Dependency Network](https://arxiv.org/pdf/1605.05025.pdf)
 * [Network Science Journal](https://www.cambridge.org/core/journals/network-science/article/hourglass-effect-in-hierarchical-dependency-networks/DDBCA83D16CA74B827DAB66A98CC906A), September, 2017 
 * [Author Homepage](http://sites.google.com/site/kmsabrin)
