@@ -22,7 +22,7 @@ java HourglassAnalysis edge_list source_list target_list 0.9
 
 #### 2. Input Format
 
-A dependency network is assumed to be a directed, acyclic graph. We require the following graph properties:
+A dependency network is assumed to be a directed, acyclic graph. We require the following graph information:
 
 * edge_list: one edge per line in the following way, _from-node &lt;spaces&gt; to-node_
 * source_list: one source node identifier per line
