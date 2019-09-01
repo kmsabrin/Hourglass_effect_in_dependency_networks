@@ -46,6 +46,7 @@ The output from the above run is following:
 ![alt text](sample_out.png)
 
 
+NEW
 #### 5. Extension to Path Based Hourglass Analysis
 
 Refer to the paper:
@@ -57,6 +58,11 @@ java HourglassAnalysisPathBased pathFile 0.9
 ```
 
 pathFile consists of source-target paths one per line, with node identifiers separated by whitespace.
-A sample pathFile for the network depicted above is provided: "all_path_toy.txt"
+A sample pathFile for the network depicted above is provided: "all_paths_toy.txt"
 
 The ouput lists the core nodes for the given path coverage threshold, followed by the H-score.
+
+The output from the above run is following:
+
+![alt text](toy_all_paths.png)
+
