@@ -4,7 +4,7 @@
 >  **Keywords**:  _Modularity_, _Hierarchy_, _Centrality_, _Hourglass Networks_, _Dependency Networks_
 
 
-* Last update: 1 Nov, 2017 
+* Last update: May-2019 
 * Corresponding Paper: [The Hourglass Effect in Hierarchical Dependency Network](https://arxiv.org/pdf/1605.05025.pdf)
 * [Network Science Journal](https://www.cambridge.org/core/journals/network-science/article/hourglass-effect-in-hierarchical-dependency-networks/DDBCA83D16CA74B827DAB66A98CC906A), September, 2017 
 * [Author Homepage](http://sites.google.com/site/kmsabrin)
@@ -45,3 +45,18 @@ The output from the above run is following:
 
 ![alt text](sample_out.png)
 
+
+#### 5. Extension to Path Based Hourglass Analysis
+
+Refer to the paper:
+
+To run:
+```
+javac HourglassAnalysisPathBased.java
+java HourglassAnalysis pathFile 0.9
+```
+
+pathFile consists of source-target paths one per line, with node identifiers separated by whitespace.
+A sample pathFile for the network depicted above is provided: all_path_toy.txt
+
+The ouput lists the core nodes for the given path coverage threshold, followed by the H-score.
