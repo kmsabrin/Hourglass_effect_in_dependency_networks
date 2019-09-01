@@ -53,10 +53,10 @@ Refer to the paper:
 To run:
 ```
 javac HourglassAnalysisPathBased.java
-java HourglassAnalysis pathFile 0.9
+java HourglassAnalysisPathBased pathFile 0.9
 ```
 
 pathFile consists of source-target paths one per line, with node identifiers separated by whitespace.
-A sample pathFile for the network depicted above is provided: all_path_toy.txt
+A sample pathFile for the network depicted above is provided: "all_path_toy.txt"
 
 The ouput lists the core nodes for the given path coverage threshold, followed by the H-score.
