@@ -46,7 +46,9 @@ The output from the above run is following:
 ![alt text](sample_out.png)
 
 
-NEW
+```diff
++ NEW
+```
 #### 5. Extension to Path Based Hourglass Analysis
 
 Refer to the paper:
