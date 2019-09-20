@@ -51,7 +51,7 @@ The output from the above run is following:
 ```
 #### 5. Extension to Path Based Hourglass Analysis
 
-Refer to the paper: [The hourglass organization of the C. elegans connectome] (https://www.biorxiv.org/content/biorxiv/early/2019/04/07/600999.full.pdf)
+Refer to the paper: [The hourglass organization of the C. elegans connectome](https://www.biorxiv.org/content/biorxiv/early/2019/04/07/600999.full.pdf)
 
 To run:
 ```
