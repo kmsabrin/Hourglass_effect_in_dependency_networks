@@ -64,7 +64,7 @@ A sample path file for the network depicted above is provided: _'all_paths_toy'_
 
 The ouput lists the core nodes for the given path coverage threshold (_0.9_ above), followed by the H-score.
 
-The output from the above run is following:
+The output from the above run with _'all_paths_toy'_ is following:
 
 ![alt text](toy_all_paths.png)
 
