@@ -60,7 +60,7 @@ java HourglassAnalysisPathBased path_file 0.9
 ```
 
 _path_file_ consists of source-target paths one per line, with node identifiers separated by whitespace.
-A sample pathFile for the network depicted above is provided: _'all_paths_toy'_
+A sample path file for the network depicted above is provided: _'all_paths_toy'_
 
 The ouput lists the core nodes for the given path coverage threshold (_0.9_ above), followed by the H-score.
 
