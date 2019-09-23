@@ -24,10 +24,10 @@ java HourglassAnalysis edge_list source_list target_list 0.9
 
 A dependency network is assumed to be a directed, acyclic graph. We require the following graph information:
 
-* edge_list: one edge per line in the following way, _from-node &lt;spaces&gt; to-node_
-* source_list: one source node identifier per line
-* target_list: one target node identifier per line
-* coverage threshold: a number between 0 to 1
+* _edge_list_: one edge per line in the following way, _from-node &lt;spaces&gt; to-node_
+* _source_list_: one source node identifier per line
+* _target_list_: one target node identifier per line
+* _coverage threshold_: a number between 0 to 1
 
 #### 3. Output Format
 
@@ -60,9 +60,9 @@ java HourglassAnalysisPathBased pathFile 0.9
 ```
 
 pathFile consists of source-target paths one per line, with node identifiers separated by whitespace.
-A sample pathFile for the network depicted above is provided: "all_paths_toy.txt"
+A sample pathFile for the network depicted above is provided: _'all_paths_toy.txt'_
 
-The ouput lists the core nodes for the given path coverage threshold (0.9 above), followed by the H-score.
+The ouput lists the core nodes for the given path coverage threshold (_0.9_ above), followed by the H-score.
 
 The output from the above run is following:
 
@@ -72,7 +72,7 @@ The output from the above run is following:
 
 Refer to the paper: [The hourglass organization of the C. elegans connectome](https://www.biorxiv.org/content/biorxiv/early/2019/04/07/600999.full.pdf)
 
-Given a dependency network, we want to generate paths that are at most k hops larger than the shortest paths between each pair of source-target nodes. So, we k=0, we get the all possible shortest paths between each pair of source-target nodes and if k=2, then for each pair of source-target nodes, we get all possible paths between them that are at most 2 hops larger than their shortest path hop distance. 
+Given a dependency network, we want to generate paths that are at most _k_ hops larger than the shortest paths between each pair of source-target nodes. So, we _k=0_, we get the all possible shortest paths between each pair of source-target nodes and if _k=2_, then for each pair of source-target nodes, we get all possible paths between them that are at most _2_ hops larger than their shortest path hop distance. 
 
 To run:
 ```
@@ -80,13 +80,13 @@ javac HourglassAnalysis.java
 java HourglassAnalysis edge_list source_list target_list +k
 ```
 
-edge_list, source_list and target_list is as described earlier. k can take any value >= 0. Note that the '+' is required in input. A output fill wil be created named 'paths.txt' containing all paths according to the specification above.
+_edge_list_, _source_list_ and _target_list_ are as described earlier. _k_ can take any value _>= 0_. Note that the '+' is required in the fourth input parameter. A output file wil be created named _'paths.txt'_ containing all paths according to the specification above.
 
 For the given sample network above if run the following,
 ```
 java HourglassAnalysis edge_list.txt source_list.txt target_list.txt +2
 ```
-the file 'paths.txt' will contain the following
+the file _'paths.txt'_ will contain the following paths.
 ```
 a d g j 
 a d f h k 
