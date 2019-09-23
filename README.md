@@ -84,7 +84,7 @@ _edge_list_, _source_list_ and _target_list_ are as described earlier. _k_ can t
 
 For the given sample network above if run the following,
 ```
-java HourglassAnalysis edge_list.txt source_list.txt target_list.txt +2
+java HourglassAnalysis edge_list source_list target_list +2
 ```
 the file _'paths.txt'_ will contain the following paths.
 ```
