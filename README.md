@@ -68,3 +68,36 @@ The output from the above run is following:
 
 ![alt text](toy_all_paths.png)
 
+#### 5. Generating paths
+
+Refer to the paper: [The hourglass organization of the C. elegans connectome](https://www.biorxiv.org/content/biorxiv/early/2019/04/07/600999.full.pdf)
+
+Given a dependency network, we want to generate paths that are at most k hops larger than the shortest paths between each pair of source-target nodes. So, we k=0, we get the all possible shortest paths between each pair of source-target nodes and if k=2, then for each pair of source-target nodes, we get all possible paths between them that are at most 2 hops larger than their shortest path hop distance. 
+
+To run:
+```
+javac HourglassAnalysis.java
+java HourglassAnalysis edge_list source_list target_list +k
+```
+
+edge_list, source_list and target_list is as described earlier. k can take any value >= 0. Note that the '+' is required in input. A output fill wil be created named 'paths.txt' containing all paths according to the specification above.
+
+For the given sample network above if run the following,
+```
+java HourglassAnalysis edge_list.txt source_list.txt target_list.txt +2
+```
+the file 'paths.txt' will contain the following
+```
+a d g j 
+a d f h k 
+a d g h k 
+a d g k 
+a d f i l 
+a d f i m 
+b e i l 
+b e i m 
+c e i l 
+c i l 
+c e i m 
+c i m 
+```
