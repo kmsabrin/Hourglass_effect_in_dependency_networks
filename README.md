@@ -72,7 +72,7 @@ The output from the above run is following:
 
 Refer to the paper: [The hourglass organization of the C. elegans connectome](https://www.biorxiv.org/content/biorxiv/early/2019/04/07/600999.full.pdf)
 
-Given a network, we want to generate paths that are at most _k_ hops larger than the shortest paths between each pair of source-target nodes. So, we _k=0_, we get the all possible shortest paths between each pair of source-target nodes and if _k=2_, then for each pair of source-target nodes, we get all possible paths between them that are at most _2_ hops larger than their shortest path hop distance. Note that this network does not have to be acyclic. 
+Given a network, we want to generate paths that are at most _k_ hops larger than the shortest paths between each pair of source-target nodes. If _k=0_, we get the all possible shortest paths between each pair of source-target nodes and if _k=2_, then for each pair of source-target nodes, we get all possible paths between them that are at most _2_ hops larger than their shortest path hop distance. Note that the network does not have to be acyclic. 
 
 To run:
 ```
